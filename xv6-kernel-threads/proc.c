@@ -604,3 +604,51 @@ procdump(void)
 
   }
 }
+ // Stubs written by Alana
+int 
+kthread_create(void* (*start_func)(), void* stack, int stack_size)
+{
+  return -1;
+}
+
+int 
+kthread_id(void)
+{
+  return thread->tid;
+}
+
+void 
+kthread_exit(void)
+{
+  exit();
+}
+
+int 
+kthread_join(int thread_id)
+{
+  return -1;
+}
+
+int 
+kthread_mutex_alloc(void)
+{
+  return -1;
+}
+
+int 
+kthread_mutex_dealloc(int mutex_id)
+{
+  return -1;
+}
+
+int 
+kthread_mutex_lock(int mutex_id)
+{
+  return -1;
+}
+
+int 
+kthread_mutex_unlock(int mutex_id)
+{
+  return -1;
+}
